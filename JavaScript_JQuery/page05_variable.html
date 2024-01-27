@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>variable-var, let, const</h1>
+    <hr>
+    <script>
+        var name='홍길동';
+        var age=20;//처음 값을 주는 거를 초기화라고 부름
+        age=21;//값을 주는거= 재할당
+        var tel='01011112222';
+        document.write('tel:',tel,"<br>");
+        var tel='0256783214' //재선언(변수재선언) 가능
+        document.write('tel:',tel,"<br>");
+    
+        let phone='01011112222';
+        document.write('phone:',phone,"<br>");
+        // let phone='0256783214';//재선언 불가능,재할당은 가능 
+        phone='0233335555';
+        document.write('phone:',phone,"<br>");
+
+        //상수를 선언할 때는 const를 이용
+        const PI=3.14; //재선언 불가능,재할당 불가능
+        document.write(PI,"<br>");
+        //PI=5.78; [X]
+        document.write(PI,"<br>");
+    </script>
+</body>
+</html>

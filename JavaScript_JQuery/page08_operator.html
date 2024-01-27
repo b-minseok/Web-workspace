@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>대입연산자, 비교연산자 (=, ==(내용 값이 같으면 true), ===,!=,!==,>,>=,<,<=)</h1>
+    <hr>
+    <script>
+        let x=5;//=: 대입연산자, 할당연산자라고 함
+        //x: number
+        let y=5.0;
+        //y: number
+        let z="5";
+        //z: string
+
+        function print(str){
+            document.write("<h3>"+str+"</h3>");
+        }
+
+        print("x==y : "+(x==y));// == : 값만 같으면 됨 자료형 달라도 상관 없음값이 같으면 ture, 다르면 false
+        print("x==z: "+(x==z)); //true
+
+        //=== : 값도 같고 그리고 and 자료형도 같아야 true
+        print("x===y: "+(x===y));//ture
+        print("x===z: "+(x===z));//false, number===string
+
+        //!= : 값이 다르면 true
+        //!== : 값이 다르거나 또는 or 자료형이 다르면 ture
+
+        print("x!=z : "+(x!=z));//false
+        print("x!==z :"+(x!==z));//ture
+
+        let a=5;
+        let b=3;
+        print("a>b: "+(a>b));//ture
+        print("a &lt; b: "+(a<b));//false
+        //>= : 크거나 같으냐?
+        //<= : 작거나 같으냐?
+
+        print("x>=y: "+(x>=y));//ture
+    </script>
+</body>
+</html>
